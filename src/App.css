@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 
+.search-title{
+  margin: 20px;
+  font-size: 23px;
+  font-family: 'Ruslan Display', sans-serif;
+
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +24,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body{
+  background: rgb(223, 241, 177);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +49,99 @@
   to {
     transform: rotate(360deg);
   }
+}
+.search-div{
+  width: 100%;
+  height: 100%;
+}
+.inp input{
+  width: 80%;
+  margin: 20px auto;
+}
+.frm{
+  border: 1px solid black;
+}
+.details img{
+  width: auto;
+  padding: 10px;
+  overflow: hidden;
+  height: 100px;
+}
+
+.products{
+  gap: 30px;
+}
+.product{
+  width: 350px;
+  height: 450px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  /* border:  1px solid rgb(90, 89, 89); */
+  border-radius: 10px;
+  padding: 10px;
+  /* overflow: hidden; */
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.heart{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: orchid;
+}
+.cart{
+  background-color: #680747;
+  color: white;
+}
+.cart:hover{
+  background-color: #980e6a !important;
+  color: white !important;
+}
+.buy{
+  background-color: darkslateblue;
+  color: white;
+}
+.buy:hover{
+  background-color: rgb(81, 74, 129) !important;
+  color: white !important;
+}
+.buy-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.pages{
+  position: fixed;
+  bottom: 0px;
+  background-color: floralwhite;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border-top: 1px solid gainsboro;
+
+}
+.products{
+  margin-bottom: 80px;
+}
+.ul{
+  margin-top: -50px;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+}
+li{
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  list-style: none;
+}
+.err-msg{
+  display: none;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
 }
