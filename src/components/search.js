@@ -17,7 +17,7 @@ function Search() {
 
     useEffect(() => {
         async function getAllProducts() {
-            let productDetails = await fetch("http://localhost:9004/all", {
+            let productDetails = await fetch("https://webcode2-backend-0thr.onrender.com/all", {
                 method: "GET",
                 headers: {
                     "content-type": "application/json"
@@ -70,7 +70,7 @@ function Search() {
     }
 
     async function loadData(obj) {
-        let sendRequest = await fetch("http://localhost:9004/search", {
+        let sendRequest = await fetch("https://webcode2-backend-0thr.onrender.com/search", {
             method: "POST",
             body: JSON.stringify(obj),
             headers: {
