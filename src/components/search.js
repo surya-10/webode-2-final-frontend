@@ -66,6 +66,7 @@ function Search() {
     let navigate = useNavigate();
 
     function sendRequestToBackEnd(value) {
+        setMatchingItems([]);
         loadData({ inputValue: value });
     }
 
