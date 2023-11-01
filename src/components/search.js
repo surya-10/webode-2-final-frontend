@@ -102,6 +102,7 @@ function Search() {
 
 
     const handleInputChange = (event) => {
+        setMatchingItems([])
         const value = event.target.value;
         setInputValue(value);
         setMatchingItems([]);
