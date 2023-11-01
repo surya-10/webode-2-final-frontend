@@ -72,7 +72,7 @@ body{
   gap: 30px;
 }
 .product{
-  width: 350px;
+  width: 330px;
   height: 450px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   /* border:  1px solid rgb(90, 89, 89); */
